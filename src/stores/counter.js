@@ -13,12 +13,12 @@ export const useCounterStore = defineStore('counter', () => {
 
 export const useWorldStore = defineStore('FEtesk', {
   state: () => {
-    return { username: "world" }
+    return { username: "Vue3!" }
   },
 
   actions: {
     change() {
-      this.username = "Vue3"
+      this.username === "Vuetify3!" ? this.username = "Vue3!" : this.username = "Vuetify3!"
     }
   }
 })

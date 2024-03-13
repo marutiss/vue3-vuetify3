@@ -1,10 +1,17 @@
 
 <template>
-  <div>
-    <h1>호옴호옴호옴</h1>
-  </div>
-  <p>Hello {{ username }}</p>
-    <button @click="changeMessage">Change</button>
+  <v-container fluid>
+    <!-- <v-card variant="flat"> -->
+      <v-row align="center" dense>
+        <v-col cols=auto>
+        Hello {{ username }}
+        </v-col>
+        <v-col>
+          <v-btn rounded="xl" color="primary" @click="changeMessage">Change</v-btn>
+        </v-col>
+      </v-row>
+    <!-- </v-card> -->
+  </v-container>
 </template>
 
 <script setup>
